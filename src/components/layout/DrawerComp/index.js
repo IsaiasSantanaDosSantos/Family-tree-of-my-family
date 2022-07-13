@@ -29,10 +29,13 @@ const DrawerComp = () => {
                       <Link to="/">Início</Link>
                     </li>
                     <li>
-                      <Link to="/historias">Historias</Link>
+                      <Link to="/history">Historias</Link>
                     </li>
                     <li>
-                      <Link to="/contatos">Contatos</Link>
+                      <Link to="/contacts">Contatos</Link>
+                    </li>
+                    <li>
+                      <Link to="/about">Sobre</Link>
                     </li>
                   </ul>
                 </Container>

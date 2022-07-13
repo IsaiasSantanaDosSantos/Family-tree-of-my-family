@@ -1,18 +1,22 @@
 import { Container } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import Header from './components/layout/Header';
+import Home from './components/pages/Home';
+import History from './components/pages/History';
+import Contacts from './components/pages/Contacts';
+import About from './components/pages/About';
 
 function App() {
   return (
     <Router>
-      <Header />
+      <Navbar />
       <Container>
         <Routes>
-          {/* <Route path="/" element={<Inicio />} />
-          <Route path="/listar" element={<Historia />} />
-          <Route path="/contatos" element={<Contatos />} />
-          <Route path="/sobre" element={<Sobre />} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Container>
       <Footer />

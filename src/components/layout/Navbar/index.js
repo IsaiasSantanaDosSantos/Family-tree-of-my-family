@@ -13,51 +13,48 @@ import {
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import DrawerComp from '../DrawerComp';
+import { NavbarComponent } from './styles';
 
 // const pages = ["Início", "Cadastro", "Contato"];
 
-const Header = () => {
+const Navbar = () => {
   const [value, setValue] = useState();
 
   const theme = useTheme();
 
   const isMath = useMediaQuery(theme.breakpoints.down('sm'));
 
-  /*
-Este bloco estava entre a tag Tabs:
-{pages.map((page, index) => (
-  <Tab key={index} label={page} />
-
-
- */
   return (
-    <React.Fragment>
+    <NavbarComponent>
       <AppBar sx={{ background: '#222' }} position="sticky">
         <Toolbar>
           {isMath ? (
             <>
               <Link to="/">
-                <img></img>
+                <img alt="Família de Jesus" />
               </Link>
               <Typography></Typography>
               <DrawerComp />
             </>
           ) : (
             <>
-              <nav>
-                <Container>
+              <nav className="navNavbar">
+                <Container className="containerNavbar">
                   <Link to="/">
-                    <img alt="Acmi Saúde"></img>
+                    <img alt="Família de Jesus" />
                   </Link>
-                  <ul>
-                    <li>
+                  <ul className="menuNavbar">
+                    <li className="itensMenuNavbar">
                       <Link to="/">Início</Link>
                     </li>
-                    <li>
-                      <Link to="/cadastro">Cadastro</Link>
+                    <li className="itensMenuNavbar">
+                      <Link to="/history">História</Link>
                     </li>
-                    <li>
-                      <Link to="/contato">Contato</Link>
+                    <li className="itensMenuNavbar">
+                      <Link to="/contacts">Contato</Link>
+                    </li>
+                    <li className="itensMenuNavbar">
+                      <Link to="/about">Sobre</Link>
                     </li>
                   </ul>
                 </Container>
@@ -66,8 +63,8 @@ Este bloco estava entre a tag Tabs:
           )}
         </Toolbar>
       </AppBar>
-    </React.Fragment>
+    </NavbarComponent>
   );
 };
 
-export default Header;
+export default Navbar;
