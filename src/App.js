@@ -7,7 +7,7 @@ import History from './components/pages/History';
 import Contacts from './components/pages/Contacts';
 import About from './components/pages/About';
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Navbar />
@@ -22,6 +22,6 @@ function App() {
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;

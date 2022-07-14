@@ -15,13 +15,13 @@ export const NavbarComponent = styled.div`
   .menuNavbar {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
 
   .itensMenuNavbar {
     list-style: none;
-    margin-right: 50px;
+    margin-left: 50px;
     font-size: 18px;
   }
   .itensMenuNavbar a {

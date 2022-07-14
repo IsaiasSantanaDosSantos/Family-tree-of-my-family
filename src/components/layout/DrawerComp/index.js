@@ -17,7 +17,7 @@ const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
-    <React.Fragment sx={{ backgroundColor: '#222' }}>
+    <React.Fragment>
       <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
         <List>
           <ListItemButton onClick={() => setOpenDrawer(false)}>

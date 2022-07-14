@@ -11,14 +11,14 @@ import {
   Avatar,
   Container,
 } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import DrawerComp from '../DrawerComp';
 import { NavbarComponent } from './styles';
 
 // const pages = ["Início", "Cadastro", "Contato"];
 
 const Navbar = () => {
-  const [value, setValue] = useState();
+  // const [value, setValue] = useState();
 
   const theme = useTheme();
 
