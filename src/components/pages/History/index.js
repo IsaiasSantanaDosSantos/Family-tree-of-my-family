@@ -1,11 +1,12 @@
 import { HistoryContainer } from './styles';
 
 const History = () => {
-  <HistoryContainer>
+  return(<HistoryContainer>
     <section>
       <h1>History page</h1>
     </section>
-  </HistoryContainer>;
+  </HistoryContainer>)
+  
 };
 
 export default History;
