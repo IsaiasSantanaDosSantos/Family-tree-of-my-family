@@ -14,6 +14,7 @@ import {
 // import { useNavigate } from 'react-router-dom';
 import DrawerComp from '../DrawerComp';
 import { NavbarComponent } from './styles';
+import fotoFamilia from '../../../img/familiaJesus.png';
 
 // const pages = ["Início", "Cadastro", "Contato"];
 
@@ -31,7 +32,7 @@ const Navbar = () => {
           {isMath ? (
             <>
               <Link to="/">
-                <img alt="Família de Jesus" />
+                  <img src={fotoFamilia} alt="Família de Jesus" />
               </Link>
               <Typography></Typography>
               <DrawerComp />
@@ -41,7 +42,10 @@ const Navbar = () => {
               <nav className="navNavbar">
                 <Container className="containerNavbar">
                   <Link to="/">
-                    <img alt="Família de Jesus" />
+                    <img
+                      src={fotoFamilia} 
+                      alt="Família de Jesus"
+                    />
                   </Link>
                   <ul className="menuNavbar">
                     <li className="itensMenuNavbar">

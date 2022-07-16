@@ -10,7 +10,7 @@ const Footer = () => {
         <Container>
           <div className="footerContent">
             <p>
-              <span>Family of Tree </span>&copy; 2022 - Desenvolvido por Isaias
+              <span>Family Tree </span>&copy; 2022 - Desenvolvido por Isaias
               Santana dos Santos. <br></br>Todos os direitos reservados.
             </p>
             <div className='footerTextIcom'>

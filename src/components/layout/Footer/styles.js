@@ -10,9 +10,6 @@ export const FooterContainer = styled.div`
     margin: auto;
   }
   footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     display: block;
     background-color: #222;
