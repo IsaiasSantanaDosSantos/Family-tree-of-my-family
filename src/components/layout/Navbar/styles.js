@@ -28,4 +28,9 @@ export const NavbarComponent = styled.div`
     color: #fff;
     text-decoration: none;
   }
+  img {
+    width: 80px;
+    border-radius: 50%;
+    margin: 5px 0;
+  }
 `;
